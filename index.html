@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>One-Pager CV</title>
+</head>
+<style>
+    body {
+        margin-right: 10%;
+        margin-left: 10%;
+        font-family:Arial, sans-serif;
+    }
+
+    header {
+        position: fixed;
+        display: flex;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1;
+        align-items: center;
+        height: 140px;
+    }
+
+    .container {
+        display: flex;
+        margin-top: 160px;
+        background-color: white;
+        z-index: 2;
+    }
+    #main-title{
+        width: 55%;
+        font-size: 1.5em;
+    }
+   
+    #profile-pic {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+
+    .left-content {
+        width: 70%;
+    }
+
+    .right-content {
+        width: 30%;
+    }
+
+   section{
+       margin-top: 5%;
+   }
+
+    .info {
+        opacity: 0.5;
+    }
+
+    .title {
+        font-weight: bold;
+    }
+
+    p {
+        margin: 10px 0 0 0; 
+        font-size: 1.2em;
+    }
+
+    article {
+        margin: 0 0 30px 0;
+        width: 90%;
+    }
+
+    @media(max-width:700px) {
+        p {
+            font-size: 1em;
+        }
+    }
+</style>
+
+<body>
+    <header id="header">
+        <div id="main-title">
+            <p class="title"> Mugisha Serge<p>
+            <p> Senior Product Designer</p>
+        </div>
+            <img alt="profile picture" src="image.jpg" id="profile-pic">     
+    </header>
+
+    <div class="container">
+        <div class="left-content">
+            <section>
+                <p class="info">EXPERIENCE</p>
+                <article>
+                    <p class="title">Senior Product Designer</p>
+                    <p>Enterprise Name</p>
+                    <p class="info"> Aug 2018 - Present - 1 Year, Paris</p>
+                    <p>Directly collaborated with CEO and Product team to prototype, design and deliver the UI and UX experience with a lean design process: research, design, test and iterate</p>
+                </article>
+                <article>
+                    <p class="title">UI/UX Product Designer</p>
+                    <p>Enterprise Name</p>
+                    <p class="info">Aug 2013 - Aug 2018  - 5 Year, Paris</p>
+                    <p>Lead the UI Design with the accountability of the design system, collaborated with product and development teams on core projects to improve product interfaces and experiences</p>
+                </article>
+                <article>
+                    <p class="title">UI Designer</p>
+                    <p>Enterprise Name</p>
+                    <p class="info"> Aug 2018 - Present - 1 Year, Paris</p>
+                    <p>An element's margin controls the amount of space between an element's border and surrounding
+                        elements.</p>
+                </article>
+                <article>
+                    <p class="title">Graphic Designer</p>
+                    <p>Enterprise Name</p>
+                    <p class="info"> Aug 2018 - Present - 1 Year, Paris</p>
+                    <p>Designed print and web applications for Pau Brasil, Renault, Le theatre du Mantois, La mairie de Mantes la Ville ...</p>
+                </article>
+            </section>
+            <section>
+                <p class="info">EDUCATION</p>
+                <article>
+                    <p class="title">Senior Product Designer</p>
+                    <p>Enterprise Name</p>
+                    <p class="info"> Aug 2018 - Present - 1 Year, Paris</p>
+                    <p>An element's margin controls the amount of space between an element's border and surrounding
+                        elements.</p>
+                </article>
+                <article>
+                    <p class="title">Senior Product Designer</p>
+                    <p>Enterprise Name</p>
+                    <p class="info"> Aug 2018 - Present - 1 Year, Paris</p>
+                    <p>An element's margin controls the amount of space between an element's border and surrounding
+                        elements.</p>
+                </article>
+
+            </section>
+        </div>
+
+        <div class="right-content">
+            <section class="info">
+                <br>
+                <article>
+                    <p>nmugishaserge@gmail.com</p>
+                    <p>+250 789858453</p>
+                    <p> Kigali</p>
+                </article>
+                <article>
+                    <p class="title">Industry Knowledge</p>
+                    <p>Product Designer</p>
+                    <p>User Interface</p>
+                    <p> User Experience</p>
+                    <p>Interactive Design</p>
+                    <p>Wireframing</p>
+                    <p>Rapid Prototyping</p>
+                    <p>Design Research</p>
+                </article>
+                <article>
+                    <p class="title">Tools & Technology</p>
+                    <p>Figma, Stetch, Protopie, Framer, Invision, Abstract, Zepline, Google Analytics, Amplitude,
+                        Fullstory, .....</p>
+                </article>
+                <article>
+                    <p class="title">Other Skills</p>
+                    <p>HTML, CSS, jQuery</p>
+                </article>
+                <article>
+                    <p class="title">Languages</p>
+                    <p> French (Native) </p>
+                    <p> English</p>
+                </article>
+                <article>
+                    <p class="title">Social</p>
+                    <p> yoursite.com </p>
+                    <p> linkedin.com/username</p>
+                    <p> dribbble.com/username</p>
+                </article>
+            </section>
+        </div>
+
+
+
+
+
+    </div>
+
+    <script>
+        var title = document.getElementById("main-title");
+        var allchar = "0123456789ABCDEF";
+
+        title.addEventListener("click", myFun);
+
+        function myFun() {
+            var randcol = "";
+            for (var i = 0; i < 6; i++) {
+                randcol += allchar[Math.floor(Math.random() * 16)];
+            }
+            document.body.style.color = "#" + randcol;
+        }
+    </script>
+</body>
+
+</html>
